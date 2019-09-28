@@ -1,0 +1,23 @@
+
+docker学习笔记
+1 容器的本质:
+进程本质；
+容器是一个特殊的进程
+Namespace修改进程视图;
+Cgroups约束进程边界（计算资源）
+
+
+2 容器隔离与限制的实现原理;
+传统VM的优缺点，与容器比较；
+LCG的运用；
+
+3 容器镜像原理
+mount namespace:docker进程进来时，看到的fs；
+rootfs（区分传统VM的优势点）：多人协作下的union FS，衍生出层的概念，
+
+4 容器实战
+容器镜像：通过dockerfile定义好，dockerfile执行时会生成一个对应的镜像层
+Volumes机制:宿主和容器之间的文件传输机制;
+
+ref
+《深入剖析Kubernetes》-极客时间
